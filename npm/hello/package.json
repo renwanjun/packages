@@ -1,0 +1,19 @@
+{
+  "name": "@renwanjun/hello",
+  "version": "1.0.0",
+  "description": "npm包",
+  "keywords": [
+    "node.js",
+    "javascript"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "renwanjun",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/renwanjun"
+  },
+  "repository": "https://github.com/renwanjun/packages.git"
+}
