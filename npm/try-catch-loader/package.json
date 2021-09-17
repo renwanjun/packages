@@ -1,5 +1,5 @@
 {
-  "name": "try-catch-loader",
+  "name": "@renwanjun/try-catch-loader",
   "version": "1.0.0",
   "description": "自动为 async-await 函数添加 try-catch 错误捕捉逻辑。",
   "main": "src/index.js",
