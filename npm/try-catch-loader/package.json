@@ -1,0 +1,51 @@
+{
+  "name": "try-catch-loader",
+  "version": "1.0.0",
+  "description": "自动为 async-await 函数添加 try-catch 错误捕捉逻辑。",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "loader",
+    "webpack",
+    "try",
+    "catch"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/parser": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
+    "@babel/traverse": "^7.5.0",
+    "@babel/types": "^7.5.0",
+    "babel-polyfill": "^6.26.0",
+    "chai": "^4.3.4",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^9.2.1",
+    "loader-utils": "^1.2.3",
+    "memory-fs": "^0.4.1",
+    "mocha": "^9.1.1",
+    "prettier": "^1.18.2",
+    "webpack": "^4.35.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/renwanjun"
+  },
+  "repository": "https://github.com/renwanjun/packages.git",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run test",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix"
+    ]
+  }
+}

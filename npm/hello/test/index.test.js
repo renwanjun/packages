@@ -1,4 +1,4 @@
-const assert = require("assert");
+const assert = require("assert"); // 断言
 const { sum } = require("../index");
 
 describe("Array", function () {
